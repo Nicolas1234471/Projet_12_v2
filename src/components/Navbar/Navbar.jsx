@@ -29,7 +29,7 @@ function Navbar() {
                 }`}
             >
                 <nav className="container flex items-center justify-between mx-auto">
-                    <a href="#" className="text-2xl font-bold">
+                    <a href="#" className="text-2xl font-bold text-[#3f229c] hover:text-purple-800">
                         {'ND'}
                     </a>
 
@@ -43,7 +43,7 @@ function Navbar() {
                             >
                                 <a
                                     href={link.href}
-                                    className="text-muted-foreground transition-colors font-medium"
+                                    className="text-muted-foreground transition-colors font-medium text-[#3f229c] hover:text-purple-800"
                                 >
                                     <span className="font-mono text-sm mr-1">
                                         {link.number}.

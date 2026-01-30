@@ -18,7 +18,6 @@ const tools = [
     'Figma',
     'Chrome DevTools',
     'npm / yarn',
-    'Vercel',
     'GitHub',
 ];
 
@@ -34,21 +33,20 @@ function Skills() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-4">
+                    <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
                         <span className="font-mono text-xl">
                             03.
                         </span>
                         Compétences et outils
                     </h2>
 
-                    <p className="text-muted-foreground max-w-2xl mb-12">
-                        Technologies and tools I've learned and worked with
-                        during my development journey.
+                    <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
+                        Technologies et outils que j'ai appris et avec lesquels j'ai travaillé durant ma formation.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-12">
                         <div className="space-y-6">
-                            <h3 className="text-xl font-semibold mb-6 text-center">
+                            <h3 className="text-xl text-[#3f229c] font-semibold mb-6 text-center">
                                 Compétences techniques
                             </h3>
                             {skills.map((skill, index) => (
@@ -61,7 +59,7 @@ function Skills() {
                         </div>
 
                         <div>
-                            <h3 className="text-xl font-semibold mb-6 text-center">
+                            <h3 className="text-xl text-[#3f229c] font-semibold mb-6 text-center">
                                 Outils et Plateformes
                             </h3>
                             <div className="grid grid-cols-2 gap-3">
@@ -77,9 +75,9 @@ function Skills() {
                                         transition={{
                                             delay: 0.3 + index * 0.05,
                                         }}
-                                        className="glass-card p-4 rounded-lg text-center shadow-2xl shadow-xl/20"
+                                        className="p-4 rounded-lg text-center border shadow-lg"
                                     >
-                                        <span className="font-mono text-sm">
+                                        <span className="text-slate-700 font-mono text-sm">
                                             {tool}
                                         </span>
                                     </motion.div>
@@ -87,7 +85,7 @@ function Skills() {
                             </div>
 
                             <div className="mt-8 p-6 rounded-lg">
-                                <h4 className="font-semibold mb-3 text-center">
+                                <h4 className="text-[#3f229c] font-semibold mb-3 text-center">
                                     En train d'apprendre
                                 </h4>
                                 <div className="flex flex-wrap gap-2">

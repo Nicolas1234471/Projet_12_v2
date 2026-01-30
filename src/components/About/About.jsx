@@ -14,8 +14,8 @@ function About() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-4">
-                        <span className="text-primary font-mono text-xl">
+                    <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
+                        <span className="font-mono text-xl">
                             01.
                         </span>
                         About Me
@@ -24,7 +24,7 @@ function About() {
                     <div className="h-px bg-border flex-1 ml-4" />
 
                     <div className="grid md:grid-cols-3 gap-8 mt-12">
-                        <div className="md:col-span-2 space-y-4">
+                        <div className="md:col-span-2 space-y-4 text-slate-700">
                             <p className="text-muted-foreground leading-relaxed">
                                 Bonjour, je suis Nicolas Dupouy, développeur Front-End/Intégrateur web ayant un grand intérêt pour l'accessibilité de le design system. Je prends plaisir à rendre au client le meilleur rendu visuel possible ainsi qu'une interface utilisateur la plus plaisante autant visuellement que d'un point de vue pratique.
                             </p>

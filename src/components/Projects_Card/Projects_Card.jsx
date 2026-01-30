@@ -13,16 +13,16 @@ function ProjectCard({ project, index }) {
             boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
           }}
           whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="rounded-lg p-6 shadow-2xl shadow-xl/20"
+          className="border rounded-lg p-6 shadow-2xl shadow-xl/20"
         >
             <div className="flex items-start justify-between mb-4">
-                <Folder className="w-10 h-10 text-orange-300" />
+                <Folder className="w-10 h-10 text-[#3f229c]" />
                 <div className="flex gap-3">
                     <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground"
+                        className="text-muted-foreground transition-colors text-[#3f229c] hover:text-purple-800"
                         aria-label="View GitHub"
                     >
                         <Github className="w-5 h-5" />
@@ -31,7 +31,7 @@ function ProjectCard({ project, index }) {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground transition-colors"
+                        className="text-muted-foreground transition-colors text-[#3f229c] hover:text-purple-800"
                         aria-label="View Live"
                     >
                         <ExternalLink className="w-5 h-5" />
@@ -39,16 +39,16 @@ function ProjectCard({ project, index }) {
                 </div>
             </div>
 
-            <h3 className="text-xl font-semibold mb-2 text-center">
+            <h3 className="text-xl font-semibold mb-2 text-center text-slate-700">
                 {project.title}
             </h3>
 
-            <p className="text-muted-foreground text-sm mb-4 leading-relaxed text-center">
+            <p className="text-muted-foreground text-sm mb-4 leading-relaxed text-center text-slate-700">
                 {project.description}
             </p>
 
-            <div className="p-3 rounded-md bg-cyan-400/10 border border-cyan-400 mb-4">
-                <p className="text-sm text-cyan-700 font-medium text-center">
+            <div className="p-3 rounded-md bg-[#3f229c]/15 border border-[#3f229c] mb-4">
+                <p className="text-sm text-[#3f229c] font-medium text-center">
                     💡 {project.learnings}
                 </p>
             </div>

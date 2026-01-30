@@ -51,14 +51,14 @@ function Projects() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-4">
+                    <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
                         <span className="font-mono text-xl">
                             02.
                         </span>
                         Projets et Apprentissage
                     </h2>
 
-                    <p className="text-muted-foreground max-w-2xl mb-12">
+                    <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
                         Voici quelques projets réalisés au cours de ma formation. Chacun d'entre eux m'a appris une ou plusieurs compétences clé concernant le développement Front-End.
                     </p>
 

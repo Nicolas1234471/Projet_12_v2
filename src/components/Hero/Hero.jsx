@@ -5,7 +5,7 @@ import { SiGithub, SiMinutemailer } from '@icons-pack/react-simple-icons';
 function Hero() {
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            <div className="">
+            <div className="border-4 rounded-[6vw] p-16 border-[#3f229c]/50">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.6 }}
-                        className="text-2xl md:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-8"
+                        className="text-2xl md:text-4xl lg:text-5xl text-[#3f229c] font-semibold text-muted-foreground mb-8"
                     >
                         Développeur Front-End
                     </motion.h2>
@@ -45,7 +45,7 @@ function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5 }}
-                        className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12"
+                        className="text-muted-foreground text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12"
                     >
                         Placeholder text
                     </motion.p>
@@ -56,28 +56,43 @@ function Hero() {
                         transition={{ delay: 0.6 }}
                         className="flex items-center justify-center gap-2"
                     >
-                        <a
+                        <motion.a
+                            whileHover={{
+                            scale: 1.07,
+                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                            }}
+                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
                             href="https://github.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full text-muted-foreground transition-colors"
+                            className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
                         >
                             <SiGithub className="w-6 h-6" />
-                        </a>
-                        <a
+                        </motion.a>
+                        <motion.a
+                            whileHover={{
+                            scale: 1.07,
+                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                            }}
+                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
                             href="https://linkedin.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full text-muted-foreground transition-colors"
+                            className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
                         >
                             <Linkedin className="w-6 h-6" />
-                        </a>
-                        <a
+                        </motion.a>
+                        <motion.a
+                            whileHover={{
+                            scale: 1.07,
+                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                            }}
+                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
                             href="mailto:nicolas.dupouy17@orange.fr"
-                            className="p-3 rounded-full text-muted-foreground transition-colors"
+                            className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
                         >
                             <SiMinutemailer className="w-6 h-6" />
-                        </a>
+                        </motion.a>
                     </motion.div>
 
                     <motion.a
@@ -85,7 +100,7 @@ function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
-                        className="inline-flex items-center gap-2"
+                        className="inline-flex items-center gap-2 mt-10"
                     >
                         <span className="font-mono text-sm">
                             Scrollez pour en savoir plus

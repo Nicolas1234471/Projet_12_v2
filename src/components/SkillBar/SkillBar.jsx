@@ -12,7 +12,7 @@ function SkillBar({ skill, index}) {
                     {skill.level}%
                 </span>
             </div>
-            <div className="h-2 bg-muted rounded-full overflow-hidden">
+            <div className="h-2 bg-muted rounded-full overflow-hidden bg-slate-100">
                 <motion.div
                     initial={{ width: 0 }}
                     animate={isInView ? { width: `${skill.level}%` } : {}}
