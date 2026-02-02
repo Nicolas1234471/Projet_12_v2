@@ -8,7 +8,7 @@ function Contact() {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
     return (
         <section id="contact" className="mt-40">
-            <div className="container max-w-3xl mx-auto">
+            <div className="container max-w-5xl mx-auto">
                 <motion.div
                     ref={ref}
                     initial={{ opacity: 0, y: 40 }}
@@ -17,7 +17,7 @@ function Contact() {
                     className="text-center"
                 >
                     <span className="text-[#3f229c] font-mono text-sm">
-                        04. Quelle suite ?
+                        Quelle suite ?
                     </span>
 
                     <h2 className="text-4xl md:text-5xl text-[#3f229c] font-bold mt-4 mb-6">

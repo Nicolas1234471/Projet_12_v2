@@ -26,7 +26,7 @@ function Skills() {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
     return (
         <section id="skills" className="mt-40 bg-muted/30">
-            <div className="container max-w-4xl mx-auto">
+            <div className="container max-w-5xl mx-auto">
                 <motion.div
                     ref={ref}
                     initial={{ opacity: 0, y: 40 }}
@@ -34,9 +34,6 @@ function Skills() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
-                        <span className="font-mono text-xl">
-                            03.
-                        </span>
                         Compétences et outils
                     </h2>
 
@@ -93,7 +90,7 @@ function Skills() {
                                         (item) => (
                                             <span
                                                 key={item}
-                                                className="text-xs font-mono text-cyan-400 bg-cyan-400/10 px-3 py-1.5 rounded-full border border-cyan-400"
+                                                className="text-xs font-mono text-muted-foreground bg-muted bg-slate-300 px-2 py-1 rounded-full"
                                             >
                                                 {item}
                                             </span>

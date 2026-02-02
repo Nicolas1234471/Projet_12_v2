@@ -1,15 +1,26 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import MobileMenu from '../MobileMenu/MobileMenu.jsx';
 
 const navLinks = [
-    { href: '#about', label: 'À propos', number: '01' },
-    { href: '#projects', label: 'Projets', number: '02' },
-    { href: '#skills', label: 'Compétences', number: '03' },
-    { href: '#contact', label: 'Me contacter', number: '04' },
+    { href: '#about', label: 'À propos'},
+    { href: '#projects', label: 'Projets'},
+    { href: '#skills', label: 'Compétences'},
+    { href: '#contact', label: 'Me contacter'},
 ];
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,14 +36,18 @@ function Navbar() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                    isScrolled ? 'py-4' : 'py-6'
+                    isScrolled ? 'py-4 border-b shadow-lg bg-white/90 backdrop-blur-md' : 'py-6 bg-transparent'
                 }`}
             >
-                <nav className="container flex items-center justify-between mx-auto">
-                    <a href="#" className="text-2xl font-bold text-[#3f229c] hover:text-purple-800">
+                <nav className="flex items-center justify-between md:mx-auto pl-[50px] pr-[50px]">
+                    <a
+                        href="#"
+                        className="text-2xl font-bold text-[#3f229c] hover:text-purple-800"
+                    >
                         {'ND'}
                     </a>
 
+                    {!isMobile && (
                     <ul className="hidden md:flex items-center gap-8">
                         {navLinks.map((link, index) => (
                             <motion.li
@@ -46,7 +61,7 @@ function Navbar() {
                                     className="text-muted-foreground transition-colors font-medium text-[#3f229c] hover:text-purple-800"
                                 >
                                     <span className="font-mono text-sm mr-1">
-                                        {link.number}.
+                                        {link.number}
                                     </span>
                                     {link.label}
                                 </a>
@@ -65,8 +80,10 @@ function Navbar() {
                             </a>
                         </motion.li>
                     </ul>
-
-                    <button className="md:hidden p-2 text-foreground"></button>
+                    )}
+                    {isMobile && (
+                    <MobileMenu />
+                    )}
                 </nav>
             </motion.header>
         </div>

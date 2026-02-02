@@ -5,7 +5,11 @@ import { SiGithub, SiMinutemailer } from '@icons-pack/react-simple-icons';
 function Hero() {
     return (
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            <div className="border-4 rounded-[6vw] p-16 border-[#3f229c]/50">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="p-16">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -47,7 +51,7 @@ function Hero() {
                         transition={{ delay: 0.5 }}
                         className="text-muted-foreground text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12"
                     >
-                        Placeholder text
+                        Spécialisé dans le développement front-end et l'intégration web
                     </motion.p>
 
                     <motion.div
@@ -113,7 +117,7 @@ function Hero() {
                         </motion.div>
                     </motion.a>
                 </motion.div>
-            </div>
+            </motion.div>
         </section>
     );
 }

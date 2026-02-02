@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ExternalLink, Github, Folder } from 'lucide-react';
 import ProjectsCard from '../Projects_Card/Projects_Card.jsx';
 
 const projects = [
@@ -18,7 +17,7 @@ const projects = [
     description: "Refonte complète d'un site legacy vers une application front-end moderne pour une société de location d'appartements entre particuliers.",
     tech: ["React", "React-Router", "Vite", "JavaScript", "Git"],
     learnings: "Maîtrise de React et des concepts SPA, gestion des routes ainsi qu'utilisation de données stockées en JSON.",
-    github: "#",
+    github: "https://github.com/Nicolas1234471/Projet_7",
     live: "#",
   },
   {
@@ -26,16 +25,16 @@ const projects = [
     description: "Dans le cadre d’une mission front-end pour Argent Bank, une banque en ligne en pleine croissance, j’ai participé au développement du tableau de bord utilisateur et à la réflexion sur l’architecture des futures fonctionnalités.",
     tech: ["React","Redux","JavaScript","Sass","Git"],
     learnings: "Approfondissement des compétences en React et introduction à Redux pour la gestion d'état globale.",
-    github: "#",
+    github: "https://github.com/Nicolas1234471/Projet_10",
     live: "#",
   },
   {
     title: "Site Portfolio",
-    description: "",
+    description: "Portofolio personnel pour présenter mes projets et compétences.",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     learnings: "Création d'un site portfolio personnel pour présenter mes projets et compétences, avec des animations fluides et un design moderne.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Nicolas1234471/Projet_12_v2",
+    live: "https://nicolas1234471.github.io/Projet_12_v2/",
   },
 ];
 
@@ -52,9 +51,6 @@ function Projects() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
-                        <span className="font-mono text-xl">
-                            02.
-                        </span>
                         Projets et Apprentissage
                     </h2>
 

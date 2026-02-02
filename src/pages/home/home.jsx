@@ -10,7 +10,7 @@ function Home () {
   return (
     <div className="min-h-screen bg-white">
         <Navbar />
-        <main>
+        <main className="mr-[50px] ml-[50px] md:m-auto">
             <Hero />
             <About />
             <Projects />
