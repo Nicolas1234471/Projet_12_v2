@@ -35,8 +35,8 @@ function Navbar() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                    isScrolled ? 'py-4 border-b shadow-lg bg-white/90 backdrop-blur-md' : 'py-6 bg-transparent'
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 ${
+                    isScrolled ? 'border-b shadow-lg bg-white/90 backdrop-blur-md' : 'bg-transparent'
                 }`}
             >
                 <nav className="flex items-center justify-between md:mx-auto pl-[50px] pr-[50px]">
