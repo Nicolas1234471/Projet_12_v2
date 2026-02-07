@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-function SkillBar({ skill, index}) {
+function SkillBar({ skill, index }) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     return (

@@ -8,11 +8,16 @@ function ProjectCard({ project, index }) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{
-            scale: 1.05,
-            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
-          }}
-          whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
-          className="border rounded-lg p-6 shadow-2xl shadow-xl/20"
+                scale: 1.05,
+                boxShadow:
+                    '0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)',
+            }}
+            whileHoverTransition={{
+                type: 'spring',
+                stiffness: 300,
+                damping: 20,
+            }}
+            className="border rounded-lg p-6 shadow-2xl shadow-xl/20 flex flex-col h-full"
         >
             <div className="flex items-start justify-between mb-4">
                 <Folder className="w-10 h-10 text-[#3f229c]" />
@@ -52,7 +57,11 @@ function ProjectCard({ project, index }) {
                 </p>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <p className="text-muted-foreground text-sm mb-4 leading-relaxed text-center text-slate-700">
+                Perspectives d'amélioration : {project.improvements}
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-auto">
                 {project.tech.map((tech) => (
                     <span
                         key={tech}

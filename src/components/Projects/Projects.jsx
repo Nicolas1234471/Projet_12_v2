@@ -4,38 +4,52 @@ import { useRef } from 'react';
 import ProjectsCard from '../Projects_Card/Projects_Card.jsx';
 
 const projects = [
-  {
-    title: "Ohmyfood",
-    description: "Site vitrine de restaurants gastronomiques.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    learnings: "Acquis les bases du développement web et de la création de sites responsives.",
-    github: "https://github.com/Nicolas1234471/OCProjet4",
-    live: "https://nicolas1234471.github.io/OCProjet4/",
-  },
-  {
-    title: "Kasa",
-    description: "Refonte complète d'un site legacy vers une application front-end moderne pour une société de location d'appartements entre particuliers.",
-    tech: ["React", "React-Router", "Vite", "JavaScript", "Git"],
-    learnings: "Maîtrise de React et des concepts SPA, gestion des routes ainsi qu'utilisation de données stockées en JSON.",
-    github: "https://github.com/Nicolas1234471/Projet_7",
-    live: "#",
-  },
-  {
-    title: "Argent Bank",
-    description: "Dans le cadre d’une mission front-end pour Argent Bank, une banque en ligne en pleine croissance, j’ai participé au développement du tableau de bord utilisateur et à la réflexion sur l’architecture des futures fonctionnalités.",
-    tech: ["React","Redux","JavaScript","Sass","Git"],
-    learnings: "Approfondissement des compétences en React et introduction à Redux pour la gestion d'état globale.",
-    github: "https://github.com/Nicolas1234471/Projet_10",
-    live: "#",
-  },
-  {
-    title: "Site Portfolio",
-    description: "Portofolio personnel pour présenter mes projets et compétences.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
-    learnings: "Création d'un site portfolio personnel pour présenter mes projets et compétences, avec des animations fluides et un design moderne.",
-    github: "https://github.com/Nicolas1234471/Projet_12_v2",
-    live: "https://nicolas1234471.github.io/Projet_12_v2/",
-  },
+    {
+        title: 'Ohmyfood',
+        description: 'Site vitrine de restaurants gastronomiques.',
+        tech: ['HTML5', 'CSS3', 'JavaScript'],
+        learnings:
+            'Acquis les bases du développement web et de la création de sites responsives.',
+        improvements:
+            'Dynamisation du contenu via JavaScript ou un back-end, amélioration de l’accessibilité et optimisation des performances globales du site.',
+        github: 'https://github.com/Nicolas1234471/OCProjet4',
+        live: 'https://nicolas1234471.github.io/OCProjet4/',
+    },
+    {
+        title: 'Kasa',
+        description:
+            "Refonte complète d'un site legacy vers une application front-end moderne pour une société de location d'appartements entre particuliers.",
+        tech: ['React', 'React-Router', 'Vite', 'JavaScript', 'Git'],
+        learnings:
+            "Maîtrise de React et des concepts SPA, gestion des routes ainsi qu'utilisation de données stockées en JSON.",
+        improvements:
+            'Connexion à une API back-end réelle, gestion avancée des états (context ou Redux) et amélioration de l’accessibilité et des performances globales.',
+        github: 'https://github.com/Nicolas1234471/Projet_7',
+        live: '#',
+    },
+    {
+        title: 'Argent Bank',
+        description:
+            'Dans le cadre d’une mission front-end pour Argent Bank, une banque en ligne en pleine croissance, j’ai participé au développement du tableau de bord utilisateur et à la réflexion sur l’architecture des futures fonctionnalités.',
+        tech: ['React', 'Redux', 'JavaScript', 'Sass', 'Git'],
+        learnings:
+            "Approfondissement des compétences en React et introduction à Redux pour la gestion d'état globale.",
+        improvements:
+            'Implémentation complète des pages de transactions, optimisation des performances front-end et renforcement de la sécurité et de  l’accessibilité.',
+        github: 'https://github.com/Nicolas1234471/Projet_10',
+        live: '#',
+    },
+    {
+        title: 'Site Portfolio',
+        description:
+            'Portofolio personnel pour présenter mes projets et compétences.',
+        tech: ['React', 'Tailwind CSS', 'Framer Motion'],
+        learnings:
+            "Création d'un site portfolio personnel pour présenter mes projets et compétences, avec des animations fluides et un design moderne.",
+        improvements: 'Ajout de fonctionnalités interactives, optimisation pour les performances et amélioration de l’accessibilité.',
+        github: 'https://github.com/Nicolas1234471/Projet_12_v2',
+        live: 'https://nicolas1234471.github.io/Projet_12_v2/',
+    },
 ];
 
 function Projects() {
@@ -55,7 +69,10 @@ function Projects() {
                     </h2>
 
                     <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
-                        Voici quelques projets réalisés au cours de ma formation. Chacun d'entre eux m'a appris une ou plusieurs compétences clé concernant le développement Front-End.
+                        Voici quelques projets réalisés au cours de ma
+                        formation. Chacun d'entre eux m'a appris une ou
+                        plusieurs compétences clé concernant le développement
+                        Front-End.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6">

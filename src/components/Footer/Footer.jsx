@@ -29,8 +29,7 @@ function Footer() {
                     </a>
                 </div>
 
-                <p className="text-muted-foreground text-sm font-mono">
-                </p>
+                <p className="text-muted-foreground text-sm font-mono"></p>
 
                 <p className="text-muted-foreground/50 text-xs text-slate-700 font-mono mt-2">
                     © {new Date().getFullYear()} Nicolas Dupouy.

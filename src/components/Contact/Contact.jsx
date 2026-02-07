@@ -25,7 +25,11 @@ function Contact() {
                     </h2>
 
                     <p className="text-muted-foreground text-lg text-slate-700 max-w-xl mx-auto mb-12">
-                        Je recherche actuellement une place en tant qu'intégrateur web/développeur front-end junior afin d'acquérir de l'expérience, avoir des points de vus extérieurs, et être dirigé sur la bonne voie afin de rendre des livrables de qualité et performants.
+                        Je recherche actuellement une place en tant
+                        qu'intégrateur web/développeur front-end junior afin
+                        d'acquérir de l'expérience, avoir des points de vus
+                        extérieurs, et être dirigé sur la bonne voie afin de
+                        rendre des livrables de qualité et performants.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

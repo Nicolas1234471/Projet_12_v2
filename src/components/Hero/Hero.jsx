@@ -9,7 +9,8 @@ function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
-                className="p-16">
+                className="p-16"
+            >
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -29,9 +30,7 @@ function Hero() {
                         transition={{ delay: 0.3, duration: 0.6 }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
                     >
-                        <span
-                            className="bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient"
-                        >
+                        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
                             Nicolas Dupouy
                         </span>
                     </motion.h1>
@@ -51,7 +50,8 @@ function Hero() {
                         transition={{ delay: 0.5 }}
                         className="text-muted-foreground text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12"
                     >
-                        Spécialisé dans le développement front-end et l'intégration web
+                        Spécialisé dans le développement front-end et
+                        l'intégration web
                     </motion.p>
 
                     <motion.div
@@ -62,10 +62,15 @@ function Hero() {
                     >
                         <motion.a
                             whileHover={{
-                            scale: 1.07,
-                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                                scale: 1.07,
+                                boxShadow:
+                                    '0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)',
                             }}
-                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
+                            whileHoverTransition={{
+                                type: 'spring',
+                                stiffness: 300,
+                                damping: 20,
+                            }}
                             href="https://github.com"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -75,10 +80,15 @@ function Hero() {
                         </motion.a>
                         <motion.a
                             whileHover={{
-                            scale: 1.07,
-                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                                scale: 1.07,
+                                boxShadow:
+                                    '0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)',
                             }}
-                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
+                            whileHoverTransition={{
+                                type: 'spring',
+                                stiffness: 300,
+                                damping: 20,
+                            }}
                             href="https://linkedin.com"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -88,10 +98,15 @@ function Hero() {
                         </motion.a>
                         <motion.a
                             whileHover={{
-                            scale: 1.07,
-                            boxShadow: "0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)"
+                                scale: 1.07,
+                                boxShadow:
+                                    '0px 10px 20px rgba(0,0,0,0.2), 0px 0px 30px rgba(0,0,0,0.1)',
                             }}
-                            whileHoverTransition={{ type: "spring", stiffness: 300, damping: 20 }}
+                            whileHoverTransition={{
+                                type: 'spring',
+                                stiffness: 300,
+                                damping: 20,
+                            }}
                             href="mailto:nicolas.dupouy17@orange.fr"
                             className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
                         >

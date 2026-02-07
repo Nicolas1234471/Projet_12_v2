@@ -4,22 +4,16 @@ import { useRef } from 'react';
 import SkillBar from '../SkillBar/SkillBar.jsx';
 
 const skills = [
-  { name: "HTML5", level: 90 },
-  { name: "CSS3 / Tailwind", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "React", level: 75 },
-  { name: "Git & GitHub", level: 75 },
-  { name: "Responsive Design", level: 85 },
-  { name: "UI/UX Basics", level: 65 },
+    { name: 'HTML5', level: 90 },
+    { name: 'CSS3 / Tailwind', level: 85 },
+    { name: 'JavaScript', level: 80 },
+    { name: 'React', level: 75 },
+    { name: 'Git & GitHub', level: 75 },
+    { name: 'Responsive Design', level: 85 },
+    { name: 'UI/UX Basics', level: 65 },
 ];
 
-const tools = [
-    'VS Code',
-    'Figma',
-    'Chrome DevTools',
-    'npm / yarn',
-    'GitHub',
-];
+const tools = ['VS Code', 'Figma', 'Chrome DevTools', 'npm / yarn', 'GitHub'];
 
 function Skills() {
     const ref = useRef(null);
@@ -38,7 +32,8 @@ function Skills() {
                     </h2>
 
                     <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
-                        Technologies et outils que j'ai appris et avec lesquels j'ai travaillé durant ma formation.
+                        Technologies et outils que j'ai appris et avec lesquels
+                        j'ai travaillé durant ma formation.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-12">
@@ -85,7 +80,7 @@ function Skills() {
                                 <h4 className="text-[#3f229c] font-semibold mb-3 text-center">
                                     En train d'apprendre
                                 </h4>
-                                <div className="flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-2 justify-center">
                                     {['Tailwind', 'Framer motion'].map(
                                         (item) => (
                                             <span
