@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Folder } from 'lucide-react';
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project }) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{
                 scale: 1.05,
                 boxShadow:
@@ -15,7 +15,7 @@ function ProjectCard({ project, index }) {
             whileHoverTransition={{
                 type: 'spring',
                 stiffness: 300,
-                damping: 20,
+                damping: 20,       
             }}
             className="border rounded-lg p-6 shadow-2xl shadow-xl/20 flex flex-col h-full"
         >
