@@ -46,7 +46,8 @@ const projects = [
         tech: ['React', 'Tailwind CSS', 'Framer Motion'],
         learnings:
             "Création d'un site portfolio personnel pour présenter mes projets et compétences, avec des animations fluides et un design moderne.",
-        improvements: 'Ajout de fonctionnalités interactives, optimisation pour les performances et amélioration de l’accessibilité.',
+        improvements:
+            'Ajout de fonctionnalités interactives, optimisation pour les performances et amélioration de l’accessibilité.',
         github: 'https://github.com/Nicolas1234471/Projet_12_v2',
         live: 'https://nicolas1234471.github.io/Projet_12_v2/',
     },
@@ -56,7 +57,7 @@ function Projects() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
     return (
-        <section id="projects" className="mt-40">
+        <section id="projects" className="mt-20 pt-20">
             <div className="container max-w-5xl mx-auto">
                 <motion.div
                     ref={ref}
@@ -68,7 +69,7 @@ function Projects() {
                         Projets et Apprentissage
                     </h2>
 
-                    <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
+                    <p className="text-slate-700 max-w-2xl mb-12">
                         Voici quelques projets réalisés au cours de ma
                         formation. Chacun d'entre eux m'a appris une ou
                         plusieurs compétences clé concernant le développement

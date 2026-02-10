@@ -24,7 +24,7 @@ function Contact() {
                         Me contacter
                     </h2>
 
-                    <p className="text-muted-foreground text-lg text-slate-700 max-w-xl mx-auto mb-12">
+                    <p className="text-lg text-slate-700 max-w-xl mx-auto mb-12">
                         Je recherche actuellement une place en tant
                         qu'intégrateur web/développeur front-end junior afin
                         d'acquérir de l'expérience, avoir des points de vus
@@ -35,13 +35,13 @@ function Contact() {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                         <a
                             href="mailto:nicolas.dupouy17@orange.fr"
-                            className="flex items-center gap-2 text-muted-foreground text-slate-700 hover:text-slate-400 transition-colors"
+                            className="flex items-center gap-2 text-slate-700 hover:text-slate-400 transition-colors"
                         >
                             <Mail className="w-5 h-5" />
                             <span>nicolas.dupouy17@orange.fr</span>
                         </a>
-                        <span className="hidden sm:block text-border">|</span>
-                        <span className="flex items-center gap-2 text-muted-foreground text-slate-700">
+                        <span className="hidden sm:block">|</span>
+                        <span className="flex items-center gap-2 text-slate-700">
                             <MapPin className="w-5 h-5" />
                             <span>La Rochelle, France</span>
                         </span>

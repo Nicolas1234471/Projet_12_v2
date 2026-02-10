@@ -8,11 +8,9 @@ function SkillBar({ skill, index }) {
         <div ref={ref} className="space-y-2">
             <div className="flex justify-between text-sm">
                 <span className="font-medium">{skill.name}</span>
-                <span className="text-muted-foreground font-mono">
-                    {skill.level}%
-                </span>
+                <span className="font-mono">{skill.level}%</span>
             </div>
-            <div className="h-2 bg-muted rounded-full overflow-hidden bg-slate-100">
+            <div className="h-2 rounded-full overflow-hidden bg-slate-100">
                 <motion.div
                     initial={{ width: 0 }}
                     animate={isInView ? { width: `${skill.level}%` } : {}}

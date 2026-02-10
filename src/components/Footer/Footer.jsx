@@ -9,7 +9,7 @@ function Footer() {
                         href="https://github.com/Nicolas1234471"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
+                        className="text-[#3f229c] hover:text-purple-800 transition-colors"
                     >
                         <Github className="w-5 h-5" />
                     </a>
@@ -17,21 +17,21 @@ function Footer() {
                         href="https://linkedin.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
+                        className="text-[#3f229c] hover:text-purple-800 transition-colors"
                     >
                         <Linkedin className="w-5 h-5" />
                     </a>
                     <a
                         href="mailto:nicolas.dupouy17@orange.fr"
-                        className="text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"
+                        className="text-[#3f229c] hover:text-purple-800 transition-colors"
                     >
                         <Mail className="w-5 h-5" />
                     </a>
                 </div>
 
-                <p className="text-muted-foreground text-sm font-mono"></p>
+                <p className="text-sm font-mono"></p>
 
-                <p className="text-muted-foreground/50 text-xs text-slate-700 font-mono mt-2">
+                <p className="text-xs text-slate-700 font-mono mt-2">
                     © {new Date().getFullYear()} Nicolas Dupouy.
                 </p>
             </div>

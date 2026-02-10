@@ -4,7 +4,10 @@ import { SiGithub, SiMinutemailer } from '@icons-pack/react-simple-icons';
 
 function Hero() {
     return (
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <section
+            id="hero"
+            className="min-h-screen flex items-center justify-center relative overflow-hidden"
+        >
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -17,13 +20,6 @@ function Hero() {
                     transition={{ duration: 0.8 }}
                     className="text-center"
                 >
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className=""
-                    ></motion.p>
-
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -71,7 +67,7 @@ function Hero() {
                                 stiffness: 300,
                                 damping: 20,
                             }}
-                            href="https://github.com"
+                            href="https://github.com/Nicolas1234471"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"

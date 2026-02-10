@@ -4,6 +4,7 @@ import MobileMenu from '../MobileMenu/MobileMenu.jsx';
 
 const navLinks = [
     { href: '#about', label: 'À propos' },
+    { href: '#careerpath', label: 'Parcours' },
     { href: '#projects', label: 'Projets' },
     { href: '#skills', label: 'Compétences' },
     { href: '#contact', label: 'Me contacter' },
@@ -43,7 +44,7 @@ function Navbar() {
             >
                 <nav className="flex items-center justify-between md:mx-auto pl-[50px] pr-[50px]">
                     <a
-                        href="#"
+                        href="#hero"
                         className="text-2xl font-bold text-[#3f229c] hover:text-purple-800"
                     >
                         {'ND'}
@@ -60,7 +61,7 @@ function Navbar() {
                                 >
                                     <a
                                         href={link.href}
-                                        className="text-muted-foreground transition-colors font-medium text-[#3f229c] hover:text-purple-800"
+                                        className="transition-colors font-medium text-[#3f229c] hover:text-purple-800"
                                     >
                                         <span className="font-mono text-sm mr-1">
                                             {link.number}

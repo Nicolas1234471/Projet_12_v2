@@ -5,6 +5,7 @@ import './MobileMenu.css';
 
 const navLinks = [
     { href: '#about', label: 'À propos' },
+    { href: '#careerpath', label: 'Parcours' },
     { href: '#projects', label: 'Projets' },
     { href: '#skills', label: 'Compétences' },
     { href: '#contact', label: 'Me contacter' },

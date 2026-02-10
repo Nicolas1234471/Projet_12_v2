@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
             whileHoverTransition={{
                 type: 'spring',
                 stiffness: 300,
-                damping: 20,       
+                damping: 20,
             }}
             className="border rounded-lg p-6 shadow-2xl shadow-xl/20 flex flex-col h-full"
         >

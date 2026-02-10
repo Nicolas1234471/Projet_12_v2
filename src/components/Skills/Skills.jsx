@@ -19,7 +19,7 @@ function Skills() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: '-100px' });
     return (
-        <section id="skills" className="mt-40 bg-muted/30">
+        <section id="skills" className="mt-20 pt-20">
             <div className="container max-w-5xl mx-auto">
                 <motion.div
                     ref={ref}
@@ -31,7 +31,7 @@ function Skills() {
                         Compétences et outils
                     </h2>
 
-                    <p className="text-muted-foreground text-slate-700 max-w-2xl mb-12">
+                    <p className="text-slate-700 max-w-2xl mb-12">
                         Technologies et outils que j'ai appris et avec lesquels
                         j'ai travaillé durant ma formation.
                     </p>
@@ -85,7 +85,7 @@ function Skills() {
                                         (item) => (
                                             <span
                                                 key={item}
-                                                className="text-xs font-mono text-muted-foreground bg-muted bg-slate-300 px-2 py-1 rounded-full"
+                                                className="text-xs font-mono bg-slate-300 px-2 py-1 rounded-full"
                                             >
                                                 {item}
                                             </span>
