@@ -33,16 +33,6 @@ function About() {
                             </p>
 
                             <p className="leading-relaxed">
-                                J'ai découvert le développement web via une
-                                formation OpenClassrooms, je me suis renseigné
-                                et j'ai tout de suite été intrigué, penser aux
-                                besoins utilisateur mais également avoir le
-                                souci du détail pour toute la partie visuelle
-                                sont deux qualités qui m'aident énormément dans
-                                ce domaine.
-                            </p>
-
-                            <p className="leading-relaxed">
                                 Mon objectif en tant que junior est d'intégrer
                                 une équipe afin d'acquérir de l'expérience,
                                 avoir d'autres points de vus que le mien sur mon
