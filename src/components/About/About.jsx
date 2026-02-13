@@ -15,7 +15,7 @@ function About() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="text-3xl md:text-4xl text-[#3f229c] font-bold mb-4 flex items-center gap-4">
-                        About Me
+                        À propos
                     </h2>
 
                     <div className="h-px flex-1 ml-4" />
