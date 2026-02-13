@@ -5,7 +5,7 @@ Il présente mes projets, mes compétences et mon parcours en développement web
 
 ## Lien vers le site
 
-👉 https://nicolas1234471.github.io/Projet_12_v2/
+- https://nicolas1234471.github.io/Projet_12_v2/
 
 ## Technologies utilisées
 
