@@ -85,7 +85,7 @@ function Hero() {
                                 stiffness: 300,
                                 damping: 20,
                             }}
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/nicolas-dupouy-518546397"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3 border shadow-xl rounded-full text-muted-foreground text-[#3f229c] hover:text-purple-800 transition-colors"

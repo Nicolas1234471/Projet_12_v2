@@ -4,8 +4,8 @@ import { useRef } from 'react';
 import SkillBar from '../SkillBar/SkillBar.jsx';
 
 const skills = [
-    { name: 'HTML5', level: 90 },
-    { name: 'CSS3 / Tailwind', level: 85 },
+    { name: 'HTML5', level: 100 },
+    { name: 'CSS3 / Tailwind / Framer Motion', level: 85 },
     { name: 'JavaScript', level: 80 },
     { name: 'React', level: 75 },
     { name: 'Git & GitHub', level: 75 },
@@ -76,7 +76,7 @@ function Skills() {
                                 ))}
                             </div>
 
-                            <div className="mt-8 p-6 rounded-lg">
+                            {/*<div className="mt-8 p-6 rounded-lg">
                                 <h4 className="text-[#3f229c] font-semibold mb-3 text-center">
                                     En train d'apprendre
                                 </h4>
@@ -92,7 +92,7 @@ function Skills() {
                                         ),
                                     )}
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </motion.div>

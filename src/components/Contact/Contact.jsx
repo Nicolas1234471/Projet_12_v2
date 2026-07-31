@@ -41,6 +41,8 @@ function Contact() {
                             <span>nicolas.dupouy17@orange.fr</span>
                         </a>
                         <span className="hidden sm:block">|</span>
+                            <span>+33 6 47 97 99 71</span>
+                        <span className="hidden sm:block">|</span>
                         <span className="flex items-center gap-2 text-slate-700">
                             <MapPin className="w-5 h-5" />
                             <span>La Rochelle, France</span>
